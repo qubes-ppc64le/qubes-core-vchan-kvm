@@ -1,0 +1,22 @@
+Source: libvchan-kvm
+Section: libs
+Priority: extra
+Maintainer: Jason Mehring <nrgaway@gmail.com>
+Build-Depends: debhelper, quilt, autotools-dev, libkvmchan-dev
+Standards-Version: 3.9.5
+Homepage: http://www.qubes-os.org
+
+Package: libvchan-kvm
+Section: libs
+Architecture: amd64
+#Depends: libxenstore3.0, ${shlibs:Depends}, ${misc:Depends}
+Depends: libkvmchan, ${shlibs:Depends}, ${misc:Depends}
+Description: Qubes KVM host and VM core libraries
+ This package includes the libraries required for the higher-level Qubes
+ daemons and tools running within a KVM host and VM.
+
+Package: libvchan-kvm-dev
+Section: libdevel
+Architecture: amd64
+Depends: libkvmchan-dev, libvchan-kvm (= ${binary:Version}), ${misc:Depends}
+Description: Development files for Qubes libvchan communication library.

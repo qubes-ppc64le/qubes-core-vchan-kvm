@@ -1,0 +1,9 @@
+--- a/vchan/vchan-kvm.pc.in
++++ b/vchan/vchan-kvm.pc.in
+@@ -7,5 +7,5 @@
+ Requires.private: kvmchan
+ Description: The vchan communication library (KVM)
+ Version: @VERSION@
+-Cflags: -I${includedir}
++Cflags: -I${includedir}/vchan-kvm
+ Libs: -L${libdir} -lvchan-kvm
