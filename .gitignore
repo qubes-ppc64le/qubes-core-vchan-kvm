@@ -1,5 +1,6 @@
 rpm/
 deb/
+pkgs/
 *~
 *.o
 *.so
