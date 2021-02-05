@@ -83,6 +83,7 @@ Requires:       libkvmchan
 %files devel
 %{_includedir}/vchan-kvm/libvchan.h
 %{_libdir}/pkgconfig/vchan-kvm.pc
+%{_libdir}/pkgconfig/vchan.pc
 %{_includedir}/u2mfnlib.h
 %{_includedir}/u2mfn-kernel.h
 

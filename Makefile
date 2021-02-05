@@ -20,6 +20,7 @@ install:
 	install -D -m 0644 vchan/vchan-kvm.pc ${DESTDIR}$(LIBDIR)/pkgconfig/vchan-kvm.pc
 	install -D -m 0644 u2mfn/u2mfnlib.h ${DESTDIR}$(INCLUDEDIR)/u2mfnlib.h
 	install -D -m 0644 u2mfn/u2mfn-kernel.h ${DESTDIR}$(INCLUDEDIR)/u2mfn-kernel.h
+	cd ${DESTDIR}$(LIBDIR)/pkgconfig && ln -s vchan-kvm.pc vchan.pc
 
 clean:
 	make -C u2mfn clean

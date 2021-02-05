@@ -1,4 +1,5 @@
 usr/include/vchan-kvm/libvchan.h
 usr/lib/pkgconfig/vchan-kvm.pc
+usr/lib/pkgconfig/vchan.pc
 usr/include/u2mfn-kernel.h
 usr/include/u2mfnlib.h
