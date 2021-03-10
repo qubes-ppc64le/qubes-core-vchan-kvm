@@ -54,9 +54,7 @@ EVTCHN libvchan_fd_for_select(libvchan_t *ctrl) {
 }
 
 int libvchan_is_open(libvchan_t *ctrl) {
-    // TODO: same as libvchan_wait
-    (void)ctrl;
-    return VCHAN_CONNECTED;
+    return libkvmchan_get_state(ctrl);
 }
 
 int libvchan_data_ready(libvchan_t *ctrl) {
