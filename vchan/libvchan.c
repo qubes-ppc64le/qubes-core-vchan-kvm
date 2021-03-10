@@ -33,6 +33,9 @@ int libvchan_recv(libvchan_t *ctrl, void *data, size_t size) {
 }
 
 int libvchan_wait(libvchan_t *ctrl) {
+    // Clear any pending events on the eventfd
+    libkvmchan_clear_eventfd(ctrl);
+
     /**
      * TODO: libkvmchan currently doesn't have a mechanism
      * for probing whether the other end of the vchan
